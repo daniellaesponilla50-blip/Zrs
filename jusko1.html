@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDIHS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+        }
+        .header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 5px 0 0; font-size: 14px; }
+        
+        /* Navigation and Dropdown Styles */
+        .nav {
+            background-color: #0055bb;
+            padding: 0;
+            overflow: hidden;
+        }
+        .nav a, .dropdown-btn {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            display: inline-block;
+        }
+        .nav a:hover, .dropdown:hover .dropdown-btn {
+            text-decoration: underline;
+            background-color: #0044aa;
+        }
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: #0066cc;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .content-wrapper {
+            display: flex; /* Ibinalik ang flex para manatili sa gilid ang sidebar */
+            padding: 20px;
+        }
+        .sidebar {
+            width: 20%; /* Manatiling nasa gilid */
+            padding-right: 20px;
+        }
+        .sidebar p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+            text-decoration: underline;
+            display: block; /* Isa-isang pahiwatig pababa sa sidebar */
+        }
+        .sidebar p:hover { color: #0066cc; }
+        .main {
+            width: 80%; /* Manatiling nasa kanan */
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .main h2 { margin-top: 0; color: #0066cc; }
+        /* Mga pink na section lang ang may ganitong hitsura */
+        section, .section {
+            background-color: pink;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid green;
+        }
+    </style>
+    <script>
+        function showInfo(infoType) {
+            console.log(infoType + " clicked");
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>LESSON 2</h1>
+        <p>EMERGING TRENDS AND ISSUES IN</p>
+        <p>INFORMATION AND COMMUNICATIONS TECHNOLOGY</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <div class="dropdown">
+            <a class="dropdown-btn" href="zwirs.html">Home</a>
+            <div class="dropdown-content">
+                <a href="zorr2.html">Mission</a>
+                <a href="zorr3.html">Vision</a>
+                <a href="zorr1.html">Core Values</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="dropdown-btn" href="#">Activities</a>
+            <div class="dropdown-content">
+                <a href="zwar1.html">Activity Set 1</a>
+                <a href="zwar2.html">Activity Set 2</a>
+                <a href="zwar3.html">Activity Set 3</a>
+            </div>
+        </div>
+        <a href="zwor1.html">Lesson Content</a>
+        <div class="dropdown">
+            <a class="dropdown-btn" href="#">Assessment</a>
+            <div class="dropdown-content">
+                <a href="@1.html">Assessment</a>
+                  <a href="Assessment12.html">Assessment 2</a>
+                <a href="@Quiz.html">Quiz</a>
+            </div>
+        </div>
+        <a href="about.html">About</a>
+      <!-- Reference - No Dropdown -->
+        <a href="ref.html">Reference</a>
+    </div>
+
+    <!-- Content Wrapper - Sidebar sa gilid, pink content sa kanan -->
+    <div class="content-wrapper">
+        <!-- Limang item sa sidebar (gilid kaliwa) -->
+        <div class="sidebar">
+            <p onclick="showInfo('content-standard-info')">Content Standard</p>
+            <p onclick="showInfo('performance-info')">Performance Standard</p>
+            <p onclick="showInfo('learning-competencies-info')">Learning Competencies</p>
+            <p onclick="showInfo('lesson-content-info')">Lesson Content</p>
+            <p onclick="showInfo('Objectives-info')">Objectives</p>
+        </div>
+
+        <!-- Mga pink na section lang sa kanan, lahat pababa -->
+        <div class="main">
+            <h2>EMERGING TRENDS AND ISSUES IN ICT</h2>
+
+            <!-- ICT in Education -->
+            <section>
+                <h3>ICT in Education</h3>
+                <p>
+                    ICT plays a vital role in education, especially during the pandemic.
+                    Learners can study remotely through online platforms that provide flexible learning opportunities.
+                </p>
+                <p>
+                    Artificial Intelligence (AI) chatbots and virtual assistants support learners by helping in research,
+                    writing, editing, and personalized learning.
+                </p>
+                <p>
+                    Nano learning focuses on short and targeted lessons such as videos, flashcards, infographics,
+                    and mobile applications, making learning time-efficient and cost-effective.
+                </p>
+                <p>
+                    AR and VR technologies simulate real-world experiences like virtual field trips and laboratory activities.
+                    Gamification motivates learners using games, rewards, and levels.
+                </p>
+                <p><em>Figure: ICT in Education</em></p>
+            </section>
+
+            <!-- ICT in Health -->
+            <section>
+                <h2>ICT in Health</h2>
+                <p>
+                    Hospitals now use advanced technologies such as robot-assisted surgery guided by AI.
+                    These technologies allow precision, faster recovery, and improved patient care.
+                </p>
+                <p>
+                    Wearable devices such as smart watches, glucose monitors, and blood pressure devices
+                    allow remote monitoring of patients.
+                </p>
+                <p>
+                    Blockchain technology securely stores patient health records, while IoMT and big data analytics
+                    help analyze patient data for better diagnosis and treatment.
+                </p>
+                <p><em>Figure: ICT in Health</em></p>
+            </section>
+
+            <!-- ICT in Business -->
+            <section>
+                <h2>ICT in Business</h2>
+                <p>
+                    Businesses use AI and big data analytics to automate tasks and improve decision-making.
+                    Chatbots and customer experience personalization enhance customer satisfaction.
+                </p>
+                <p>
+                    Hybrid and multi-cloud strategies provide flexible, scalable, and cost-efficient services
+                    for businesses and customers.
+                </p>
+            </section>
+
+            <!-- ICT in Transportation -->
+            <section>
+                <h2>ICT in Transportation</h2>
+                <p>
+                    Autonomous vehicles and advanced driver-assistance systems (ADAS) improve mobility,
+                    especially for the elderly and persons with disabilities.
+                </p>
+                <p>
+                    Mobility as a Service (MaaS) offers flexible transportation without relying on private car ownership.
+                    Big data analytics helps predict vehicle maintenance issues.
+                </p>
+                <p>
+                    AR and VR driving simulators are used for training future drivers and improving road safety.
+                </p>
+            </section>
+
+            <!-- Advantages of Technology Trends -->
+            <section>
+                <h2>Advantages of Technology Trends</h2>
+                <ul>
+                    <li>Enhanced customer experience and satisfaction</li>
+                    <li>Improved communication with stakeholders</li>
+                    <li>Increased productivity and automation</li>
+                    <li>Real-time and data-driven decision-making</li>
+                    <li>Cost-efficient services</li>
+                    <li>Creation of new business opportunities</li>
+                </ul>
+            </section>
+
+            <!-- Disadvantages of Technology Trends -->
+            <section>
+                <h2>Disadvantages of Technology Trends</h2>
+                <ul>
+                    <li>Job displacement</li>
+                    <li>Cybersecurity and privacy concerns</li>
+                    <li>Digital divide</li>
+                    <li>Overdependence on technology</li>
+                    <li>Distractions</li>
+                    <li>Algorithm bias and fairness issues</li>
+                </ul>
+            </section>
+
+            <!-- Issues and Challenges of ICT -->
+            <section>
+                <h2>Issues and Challenges of ICT</h2>
+                <p>
+                    While technology brings many advantages, challenges such as cybersecurity risks,
+                    ethical concerns, digital inequality, and data privacy issues must be addressed
+                    to ensure responsible and inclusive ICT development.
+                </p>
+            </section>
+
+            <!-- Learning Cubes -->
+            <section>
+                <h2>Learning Cubes</h2>
+                <p>
+                    ICT sector is one of the many fields in the industry that has many emerging trends as it contributes to the economic growth of a nation.
+                    Along with these developments, issues also need to be addressed. Emerging ICT trends in education, health, business, and transportation
+                    help make tasks easier. However, disadvantages such as security issues, data breaches, and data management problems also exist.
+                </p>
+            </section>
+
+            <!-- Artificial Intelligence -->
+            <div class="section">
+                <h3>Artificial Intelligence</h3>
+                <ol>
+                    <li>Explainability and transparency</li>
+                    <li>Algorithmic warfare</li>
+                    <li>Superintelligence and existential risk</li>
+                    <li>Ethical considerations</li>
+                    <li>Human AI trust</li>
+                    <li>Regulatory and legal challenges</li>
+                </ol>
+                <p>Figure 10: Researcher using AI</p>
+            </div>
+
+            <!-- Data Breaches -->
+            <div class="section">
+                <h3>Data Breaches</h3>
+                <p>
+                    Data breaches occur when sensitive or confidential information is stolen from a system. This includes personal data, corporate data, and medical records. The challenges associated with this ICT issue include the following.
+                </p>
+                <ol>
+                    <li>Cloud misconfiguration</li>
+                    <li>Third party attacks</li>
+                    <li>Cost and impact</li>
+                    <li>Reputational damage</li>
+                </ol>
+                <p>Figure 11: Data breach</p>
+            </div>
+
+            <!-- Security Risks -->
+            <div class="section">
+                <h3>Security Risks</h3>
+                <p>
+                    Effective security measures such as access controls, encryption, regular backups, staff training, and secure data management are important to reduce ICT security risks.
+                </p>
+                <ol>
+                    <li>Malware infections that disrupt systems and steal data</li>
+                    <li>Network vulnerabilities caused by weak security settings</li>
+                    <li>Denial of service attacks that overload systems</li>
+                    <li>Social engineering that tricks users into revealing sensitive information</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
