@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDIHS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+        }
+        .header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 5px 0 0; font-size: 14px; }
+        
+        /* Navigation and Dropdown Styles */
+        .nav {
+            background-color: #0055bb;
+            padding: 0;
+            overflow: hidden;
+        }
+        .nav a, .dropdown-btn {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            display: inline-block;
+        }
+        .nav a:hover, .dropdown:hover .dropdown-btn {
+            text-decoration: underline;
+            background-color: #0044aa;
+        }
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: #0066cc;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            padding-right: 20px;
+        }
+        .sidebar p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .sidebar p:hover { color: #0066cc; }
+        .main {
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .main h2 { margin-top: 0; color: #0066cc; }
+        .info-box {
+            margin-top: 10px;
+            padding: 15px;
+            background-color:pink;
+            border: 1px solid green;
+        }
+        .note {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>LESSON 2</h1>
+        <p>EMERGING TRENDS AND ISSUES IN </p>
+        <p>INFORMATION AND COMMUNICATIONS TECHNOLOGY</p>
+    </div>
+
+    <div class="nav">
+        <!-- Home Dropdown -->
+        <div class="dropdown">
+            <a class="dropdown-btn" href="index.html">Home</a>
+            <div class="dropdown-content">
+                <a href="zorr2.html">Mission</a>
+                <a href="zorr3.html">Vision</a>
+                <a href="zorr1.html">Core Values</a>
+            </div>
+        </div>
+
+        <!-- Activities Dropdown -->
+        <div class="dropdown">
+            <a class="dropdown-btn" href="#">Activities</a>
+            <div class="dropdown-content">
+                <a href="zwar1.html">Activity Set 1</a>
+                <a href="zwar2.html">Activity Set 2</a>
+                <a href="zwar3.html">Activity Set 3</a>
+            </div>
+        </div>
+
+        <!-- Lesson Content - No Dropdown -->
+        <a href="jusko1.html">Lesson Content</a>
+
+        <!-- Assessment Dropdown (Naayos na: Assessment 1, Assessment 2, Quiz) -->
+        <div class="dropdown">
+            <a class="dropdown-btn" href="#">Assessment</a>
+            <div class="dropdown-content">
+                <a href="assessment1.html">Assessment 1</a>
+                <a href="Assessment12.html">Assessment 2</a>
+                <a href="Quiz.html">Quiz</a>
+            </div>
+        </div>
+
+        <!-- About Link -->
+        <a href="@11.html">About</a>
+
+        <!-- Reference - No Dropdown -->
+        <a href="ref.html">Reference</a>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="sidebar">
+            <p onclick="showInfo('content-standard-info')">Content Standard</p>
+            <p onclick="showInfo('performance-info')">Performance Standard</p>
+            <p onclick="showInfo('learning-competencies-info')">Learning Competencies</p>
+            <p onclick="showInfo('lesson-content-info')">Lesson Content</p>
+            <p onclick="showInfo('Objectives-info')">Objectives</p>
+            <p onclick="showInfo('Reference-info')">Reference</p>
+        </div>
+
+        <div class="main">
+            <h2></h2>
+            <p>BATANG SANTO LIKAS NA MALAKAS, MATALINO, AT AKTIBO!</p>
+            <!-- Info will show here -->
+            <div id="info-box" class="info-box"></div>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(type) {
+            const box = document.getElementById('info-box');
+            let info = "";
+            switch(type) {
+                case 'content-standard-info':
+                    info = `
+                    <h2>II. Content Standard (DepEd)</h2>
+                    <p>Understand ICT and current trends and emerging issues affecting its use in everyday life.</p>
+                    <p>In this lesson, students will learn about the latest trends and issues in Information and Communication Technology (ICT). It explores how technology is changing the way we communicate, learn, and work, and helps students understand the importance of staying updated with new ICT developments in our digital world.</p>
+                    `;
+                    break;
+                case 'performance-info':
+                    info = `
+                    <h2>III. Performance Standard (DepEd)</h2>
+                    <p>Identify ICT trends and emerging issues and practice responsible, ethical, and safe use of ICT.</p>
+                    `;
+                    break;
+                case 'learning-competencies-info':
+                    info = `
+                    <h2>IV. Learning Competencies</h2>
+                    <ul>
+                    <li>Identify current trends in ICT</li>
+                    <li>Discuss emerging issues related to ICT</li>
+                    <li>Demonstrate responsible and ethical use of ICT</li>
+                    </ul>
+                    `;
+                    break;
+                case 'lesson-content-info':
+                    info = `
+                    <h2>V. Lesson Content</h2>
+                    <h3>A. ICT Trends</h3>
+                    <ul>
+                    <li>Social Media – platforms used to communicate and share information online</li>
+                    <li>Mobile Technology – use of smartphones and tablets</li>
+                    <li>Cloud Computing – storing data online instead of physical storage</li>
+                    <li>Online Learning – learning through digital platforms</li>
+                    </ul>
+                    <h3>B. Emerging Issues in ICT</h3>
+                    <ul>
+                    <li>Privacy and Security – protecting personal information online</li>
+                    <li>Cyberbullying – using technology to harm others</li>
+                    <li>Digital Addiction – too much use of gadgets and the internet</li>
+                    <li>Fake News – false information spread online</li>
+                    </ul>
+                    `;
+                    break;
+                case 'Objectives-info':
+                    info = `
+                    <h2>VII. Objectives</h2>
+                    <ul>
+                    <li>Define ICT trends and emerging issues</li>
+                    <li>Identify common ICT trends used in daily life</li>
+                    <li>Explain issues arising from the use of ICT</li>
+                    <li>Apply responsible and safe ICT practices</li>
+                    </ul>
+                    `;
+                    break;
+                case 'Reference-info':
+                    info = `
+                    <h2>Reference</h2>
+                    <ul>
+                    <li>Department of Education (DepEd). ICT Curriculum Guide.</li>
+                    <li>Grade 7 and Grade 10 ICT Learning Modules.</li> 
+                    <li>Articles about Artificial Intelligence and Machine Learning.</li>
+                    <li>Online articles about Data Breaches and Cybersecurity.</li>
+                    <li>Educational resources about AR, VR, and Nano Learning.</li> 
+                    <li>Technology and Education websites.</li>
+                    </ul>
+                    <div class="note">
+                        This project is for educational purposes only.
+                    </div>
+                    `;
+                    break;
+            }
+            box.innerHTML = info;
+        }
+    </script>
+</body>
+</html>
