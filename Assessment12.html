@@ -1,0 +1,194 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDIHS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+        }
+        .header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 5px 0 0; font-size: 14px; }
+        
+        /* Navigation and Dropdown Styles */
+        .nav {
+            background-color: #0055bb;
+            padding: 0;
+            overflow: hidden;
+        }
+        .nav a, .dropdown-btn {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            display: inline-block;
+        }
+        .nav a:hover, .dropdown:hover .dropdown-btn {
+            text-decoration: underline;
+            background-color: #0044aa;
+        }
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: #0066cc;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .content-wrapper {
+            display: flex; /* Ibinalik ang flex para manatili sa gilid ang sidebar */
+            padding: 20px;
+        }
+        .sidebar {
+            width: 20%; /* Manatiling nasa gilid */
+            padding-right: 20px;
+        }
+        .sidebar p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+            text-decoration: underline;
+            display: block; /* Isa-isang pahiwatig pababa sa sidebar */
+        }
+        .sidebar p:hover { color: #0066cc; }
+        .main {
+            width: 80%; /* Manatiling nasa kanan */
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .main h2 { margin-top: 0; color: #0066cc; }
+        /* Mga pink na section lang ang may ganitong hitsura */
+        section, .section {
+            background-color: pink;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid green;
+        }
+    </style>
+    <script>
+        function showInfo(infoType) {
+            console.log(infoType + " clicked");
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>LESSON 2</h1>
+        <p>EMERGING TRENDS AND ISSUES IN</p>
+        <p>INFORMATION AND COMMUNICATIONS TECHNOLOGY</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <div class="dropdown">
+            <a class="dropdown-btn" href="zwirs.html">Home</a>
+            <div class="dropdown-content">
+                <a href="zorr2.html">Mission</a>
+                <a href="zorr3.html">Vision</a>
+                <a href="zorr1.html">Core Values</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="dropdown-btn" href="#">Activities</a>
+            <div class="dropdown-content">
+                <a href="zwar1.html">Activity Set 1</a>
+                <a href="zwar2.html">Activity Set 2</a>
+                <a href="zwar3.html">Activity Set 3</a>
+            </div>
+        </div>
+        <a href="zwor1.html">Lesson Content</a>
+        <div class="dropdown">
+            <a class="dropdown-btn" href="#">Assessment</a>
+            <div class="dropdown-content">
+                <a href="@1.html">Assessment</a>
+                  <a href="Assessment12.html">Assessment 2</a>
+                <a href="@Quiz.html">Quiz</a>
+            </div>
+        </div>
+        <a href="@11.html">About</a>
+     <!-- Reference - No Dropdown -->
+        <a href="ref.html">Reference</a>
+    </div>
+
+<div class="container">
+    <h1>Assessment - Module 2</h1>
+    <h2>Lesson: Emerging Trends and Issues in ICT</h2>
+
+    <div class="info">
+        <p>Name: <input type="text"> Section: <input type="text"> Date: <input type="text"></p>
+    </div>
+
+    <p><b>Directions:</b> Answer the following questions briefly and clearly.</p>
+
+    <div class="question">1. What does ICT stand for?<textarea></textarea></div>
+    <div class="question">2. What is coding?<textarea></textarea></div>
+    <div class="question">3. Give one example of how ICT is used in education.<textarea></textarea></div>
+    <div class="question">4. Give one example of how ICT is used in health.<textarea></textarea></div>
+    <div class="question">5. What is Artificial Intelligence (AI)?<textarea></textarea></div>
+    <div class="question">6. What is nano learning?<textarea></textarea></div>
+    <div class="question">7. What does AR/VR mean?<textarea></textarea></div>
+    <div class="question">8. What is robot-assisted surgery?<textarea></textarea></div>
+    <div class="question">9. What is a data breach?<textarea></textarea></div>
+    <div class="question">10. Give one example of a security risk in ICT.<textarea></textarea></div>
+    <div class="question">11. Why is ICT important in our daily life?<textarea></textarea></div>
+    <div class="question">12. What is malware?<textarea></textarea></div>
+    <div class="question">13. What is phishing?<textarea></textarea></div>
+    <div class="question">14. What is the purpose of using ICT in schools?<textarea></textarea></div>
+    <div class="question">15. What is the purpose of learning about trends and issues in ICT?<textarea></textarea></div>
+
+    <h3>Bonus: Complete the sentence</h3>
+
+    <div class="question">16. ICT helps make work and learning more _________.<textarea></textarea></div>
+    <div class="question">17. A data breach happens when _________.<textarea></textarea></div>
+    <div class="question">18. One benefit of ICT in education is _________.<textarea></textarea></div>
+    <div class="question">19. One example of an ICT trend is _________.<textarea></textarea></div>
+    <div class="question">20. We should use ICT _________ and _________.<textarea></textarea></div>
+
+    <center>
+        <button type="submit">Submit</button>
+    </center>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
