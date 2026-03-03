@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members | SDIHS</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+        }
+
+        /* Header Section */
+        .main-header {
+            background-color: #006666; /* Teal color as in original image */
+            padding: 15px;
+            text-align: center;
+        }
+        .main-header h1 {
+            margin: 0;
+            color: white;
+            font-size: 28px;
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            background-color: #0000cc; /* Blue bar as highlighted */
+            padding: 0;
+            overflow: hidden;
+        }
+        .nav-bar a, .dropdown-btn {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            display: inline-block;
+        }
+        .nav-bar a:hover, .dropdown:hover .dropdown-btn {
+            text-decoration: underline;
+            background-color: #0044aa;
+        }
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: #0066cc;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Members Container */
+        .members-container {
+            background-color: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .members-container img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        .members-container h2 {
+            margin: 15px 0 5px;
+            font-size: 20px;
+            color: #333;
+        }
+        .facebook-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 8px 15px;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .facebook-link:hover {
+            background-color: #0055bb;
+        }
+        .members-container p {
+            color: #444;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #006666;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="main-header">
+        <h1>Members</h1>
+    </div>
+
+    <!-- Blue Navigation Bar with All Required Links -->
+    <div class="nav-bar">
+        <!-- Home Dropdown -->
+        <div class="dropdown">
+            <a class="dropdown-btn" href="zwirs.html">Home</a>
+            <div class="dropdown-content">
+                <a href="zorr2.html">Mission</a>
+                <a href="zorr3.html">Vision</a>
+                <a href="zorr1.html">Core Values</a>
+            </div>
+        </div>
+
+        <!-- Activities Dropdown -->
+        <div class="dropdown">
+            <a class="dropdown-btn" href="#">Activities</a>
+            <div class="dropdown-content">
+                <a href="zwar1.html">Activity Set 1</a>
+                <a href="zwar2.html">Activity Set 2</a>
+                <a href="zwar3.html">Activity Set 3</a>
+            </div>
+        </div>
+
+        <!-- Lesson Content -->
+        <a href="jusko1.html">Lesson Content</a>
+
+        <!-- Assessment Dropdown -->
+        <div class="dropdown">
+            <a class="dropdown-btn" href="#">Assessment</a>
+            <div class="dropdown-content">
+                <a href="assessment1.html">Assessment 1</a>
+                <a href="Assessment12.html">Assessment 2</a>
+                <a href="Quiz.html">Quiz</a>
+            </div>
+        </div>
+
+        <!-- About -->
+        <a href="@11.html">About</a>
+
+        <!-- Reference -->
+        <a href="ref.html">Reference</a>
+    </div>
+
+    <!-- Members Content -->
+    <div class="members-container">
+        <img src="cindel.jpeg" alt="Cindel Riosa Fernandez">
+        <img src="Daniella.jpeg" alt="Daniella Osorio Esponilla">
+        
+        <h2>Cindel Riosa Fernandez</h2>
+        <a href="https://www.facebook.com/profile.php?id=61582145922908" class="facebook-link">Visit Cindel's Facebook</a>
+        
+        <h2>Daniella Osorio Esponilla</h2>
+        <a href="https://www.facebook.com/share/16eYsD7wp5/" class="facebook-link">Visit Daniella's Facebook</a>
+        
+        <p>We are Grade 10 ICT students and creators of this module. We aim to help classmates understand ICT trends, emerging issues, and responsible digital practices.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>ICT Module © 2026</p>
+    </footer>
+</body>
+</html>
+
